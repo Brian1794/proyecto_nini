@@ -1,1 +1,27 @@
-<p>listas works!</p>
+{{ productos | json }}
+
+<p class="text-center mt-3">Consumo de API - Django</p>
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>create_at</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ngFor="let productos of productos">
+                <td>{{ productos.id }}</td>
+                <td>{{ productos.nombre }}</td>
+                <td>{{ productos.precio }}</td>
+                <td>{{ productos.cantidad }}</td>
+                <td>{{ productos.create_at }}</td>
+                                    
+            </tr>
+        </tbody>
+    </table>
+</div>

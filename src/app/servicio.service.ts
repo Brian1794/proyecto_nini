@@ -6,8 +6,9 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ServicioService {
 
-  constructor(private http: HttpClient) { }
-  getProductos() {
-    return this.http.get('http://localhost:8000/api/app1');
+  constructor(public http: HttpClient) { }
+
+  getproductos() {
+    return this.http.get('http://localhost:8000/api/app1/');
   }
 }

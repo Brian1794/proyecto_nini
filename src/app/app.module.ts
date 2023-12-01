@@ -8,7 +8,7 @@ import { ListasComponent } from './listas/listas.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ListasComponent
+    ListasComponent,
   ],
   imports: [
     BrowserModule,
